@@ -51,19 +51,22 @@ const ObjectivesCarousel = () => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
-      <h2 className="text-3xl font-bold text-center mb-8">Tujuan Program SAMARA</h2>
-      <Card className="max-w-4xl mx-auto p-8 relative bg-white shadow-lg card-hover">
-        <div className="text-center">
-          <p className="text-lg font-semibold text-primary min-h-[100px] flex items-center justify-center">
+      <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary to-pink-400 bg-clip-text text-transparent">
+        Tujuan Program SAMARA
+      </h2>
+      <Card className="max-w-4xl mx-auto p-10 relative bg-gradient-to-br from-white via-white to-secondary/30 shadow-xl card-modern border-0 overflow-hidden group">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+        <div className="text-center relative z-10">
+          <p className="text-xl font-semibold text-foreground min-h-[120px] flex items-center justify-center leading-relaxed px-4">
             {objectives[currentSlide]}
           </p>
         </div>
-        <div className="flex justify-center gap-4 mt-6">
+        <div className="flex justify-center gap-4 mt-8 relative z-10">
           <Button
             variant="outline"
             size="icon"
             onClick={prevSlide}
-            className="rounded-full"
+            className="rounded-full border-primary/20 hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 shadow-sm"
           >
             <ChevronLeft className="h-4 w-4" />
           </Button>
@@ -72,8 +75,8 @@ const ObjectivesCarousel = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentSlide(idx)}
-                className={`h-2 rounded-full transition-all ${
-                  idx === currentSlide ? 'w-8 bg-primary' : 'w-2 bg-muted'
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  idx === currentSlide ? 'w-8 bg-primary shadow-md' : 'w-2 bg-muted hover:bg-primary/50'
                 }`}
               />
             ))}
@@ -82,7 +85,7 @@ const ObjectivesCarousel = () => {
             variant="outline"
             size="icon"
             onClick={nextSlide}
-            className="rounded-full"
+            className="rounded-full border-primary/20 hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 shadow-sm"
           >
             <ChevronRight className="h-4 w-4" />
           </Button>

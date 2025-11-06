@@ -39,23 +39,38 @@ const Contact = () => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
-      <Card className="p-8 md:p-12 bg-white shadow-lg card-hover">
-        <h2 className="text-3xl font-bold mb-6">SAMARA TALKS</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+      <Card className="p-8 md:p-12 bg-gradient-to-br from-white via-white to-secondary/30 shadow-xl card-modern border-0">
+        <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-primary to-pink-400 bg-clip-text text-transparent">
+          SAMARA TALKS
+        </h2>
+        <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid md:grid-cols-2 gap-4">
-            <Input placeholder="Nama" required />
-            <Input type="email" placeholder="Email" required />
+            <Input 
+              placeholder="Nama" 
+              required 
+              className="border-border/50 focus:border-primary transition-colors bg-white/50"
+            />
+            <Input 
+              type="email" 
+              placeholder="Email" 
+              required 
+              className="border-border/50 focus:border-primary transition-colors bg-white/50"
+            />
           </div>
-          <Input placeholder="Subjek" required />
+          <Input 
+            placeholder="Subjek" 
+            required 
+            className="border-border/50 focus:border-primary transition-colors bg-white/50"
+          />
           <Textarea 
             placeholder="Pesan..." 
-            rows={4} 
+            rows={5} 
             required 
-            className="resize-none"
+            className="resize-none border-border/50 focus:border-primary transition-colors bg-white/50"
           />
           <Button 
             type="submit" 
-            className="w-full bg-primary hover:bg-primary/90 font-semibold"
+            className="w-full bg-gradient-to-r from-primary to-pink-400 hover:shadow-lg hover:scale-[1.02] transition-all duration-300 font-semibold"
             size="lg"
           >
             Kirim Pesan

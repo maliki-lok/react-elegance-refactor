@@ -37,16 +37,17 @@ const Gallery = () => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
-      <h2 className="text-3xl font-bold mb-4">
+      <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-pink-400 bg-clip-text text-transparent">
         Recode Kemandirian: Perempuan Gen Z Kalbar Menulis Ulang Kebebasan Digital
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
         {items.map((item, idx) => (
           <Card 
             key={idx}
-            className="p-6 bg-white shadow-md card-hover flex items-center justify-center min-h-[150px] text-center"
+            className="group p-6 bg-gradient-to-br from-white to-secondary/30 shadow-lg card-modern border-0 flex items-center justify-center min-h-[180px] text-center relative overflow-hidden"
           >
-            <p className="font-semibold text-muted-foreground">{item}</p>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <p className="font-semibold text-foreground relative z-10 group-hover:scale-105 transition-transform duration-300">{item}</p>
           </Card>
         ))}
       </div>

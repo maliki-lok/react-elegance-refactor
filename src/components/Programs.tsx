@@ -35,15 +35,22 @@ const Programs = () => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
-      <h2 className="text-3xl font-bold mb-8">Program Pemberdayaan</h2>
+      <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-primary to-pink-400 bg-clip-text text-transparent">
+        Program Pemberdayaan
+      </h2>
       
       <Accordion type="single" collapsible className="space-y-4">
-        <AccordionItem value="item-1" className="bg-white rounded-xl shadow-md border-none overflow-hidden">
-          <AccordionTrigger className="px-6 py-4 hover:bg-secondary/50 text-lg font-semibold text-primary">
-            Pelatihan UMKM
+        <AccordionItem value="item-1" className="bg-gradient-to-br from-white to-secondary/20 rounded-xl shadow-lg border border-border/50 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <AccordionTrigger className="px-6 py-5 hover:bg-primary/5 text-lg font-semibold text-foreground group">
+            <span className="flex items-center gap-3">
+              <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm group-hover:scale-110 transition-transform">
+                1
+              </span>
+              Pelatihan UMKM
+            </span>
           </AccordionTrigger>
-          <AccordionContent className="px-6 py-4 space-y-4">
-            <p className="font-semibold">Pelatihan UMKM</p>
+          <AccordionContent className="px-6 py-4 space-y-4 bg-white/50 backdrop-blur-sm">
+            <p className="font-semibold text-foreground">Pelatihan UMKM</p>
             <p>Membekali perempuan Gen Z Kalbar dengan keterampilan usaha agar lebih mandiri secara finansial dan kreatif.</p>
             
             <div>
@@ -75,12 +82,17 @@ const Programs = () => {
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-2" className="bg-white rounded-xl shadow-md border-none overflow-hidden">
-          <AccordionTrigger className="px-6 py-4 hover:bg-secondary/50 text-lg font-semibold text-primary">
-            Kelompok Dukungan
+        <AccordionItem value="item-2" className="bg-gradient-to-br from-white to-secondary/20 rounded-xl shadow-lg border border-border/50 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <AccordionTrigger className="px-6 py-5 hover:bg-primary/5 text-lg font-semibold text-foreground group">
+            <span className="flex items-center gap-3">
+              <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm group-hover:scale-110 transition-transform">
+                2
+              </span>
+              Kelompok Dukungan
+            </span>
           </AccordionTrigger>
-          <AccordionContent className="px-6 py-4 space-y-4">
-            <p className="font-semibold">Ruang Aman & Mentoring</p>
+          <AccordionContent className="px-6 py-4 space-y-4 bg-white/50 backdrop-blur-sm">
+            <p className="font-semibold text-foreground">Ruang Aman & Mentoring</p>
             <p>Menyediakan tempat bagi perempuan Gen Z berbagi pengalaman, mendapatkan mentoring, dan memperkuat jaringan sosial untuk meningkatkan kepercayaan diri.</p>
 
             <p className="font-semibold">Membuat Algoritma Tanpa Terbawa Algoritma:</p>
@@ -98,11 +110,16 @@ const Programs = () => {
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-3" className="bg-white rounded-xl shadow-md border-none overflow-hidden">
-          <AccordionTrigger className="px-6 py-4 hover:bg-secondary/50 text-lg font-semibold text-primary">
-            Wanita Harus Tetap Aman
+        <AccordionItem value="item-3" className="bg-gradient-to-br from-white to-secondary/20 rounded-xl shadow-lg border border-border/50 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <AccordionTrigger className="px-6 py-5 hover:bg-primary/5 text-lg font-semibold text-foreground group">
+            <span className="flex items-center gap-3">
+              <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm group-hover:scale-110 transition-transform">
+                3
+              </span>
+              Wanita Harus Tetap Aman
+            </span>
           </AccordionTrigger>
-          <AccordionContent className="px-6 py-4">
+          <AccordionContent className="px-6 py-4 bg-white/50 backdrop-blur-sm">
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li><strong>Keamanan Data:</strong> Jagalah informasi pribadi dengan bijak, buat kata sandi kuat, dan pikirkan sebelum membagikan data online.</li>
               <li><strong>Etika Digital:</strong> Berinteraksilah sopan dan penuh hormat di dunia maya. Gunakan kata-kata membangun.</li>
