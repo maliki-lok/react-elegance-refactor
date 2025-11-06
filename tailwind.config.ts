@@ -80,10 +80,20 @@ export default {
             height: "0",
           },
         },
+        "float-flower": {
+          "0%": { transform: "translateY(100vh) translateX(0) rotate(0deg)", opacity: "0.7" },
+          "100%": { transform: "translateY(-10vh) translateX(50px) rotate(360deg)", opacity: "0" },
+        },
+        "float-icon": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-15px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float-flower": "float-flower 12s linear infinite",
+        "float-icon": "float-icon 4s ease-in-out infinite",
       },
     },
   },
